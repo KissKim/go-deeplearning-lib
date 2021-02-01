@@ -6,4 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
-j
+jobs:
+
+  build:
+    runs-on: ub
