@@ -9,4 +9,6 @@ on:
 jobs:
 
   build:
-    runs-on: ub
+    runs-on: ubuntu-latest
+    steps:
+    -
