@@ -6,3 +6,9 @@ func argmax(x []float64) int {
 	value := x[key]
 	for k, v := range x {
 		if v > value {
+			key = k
+			value = v
+		}
+	}
+	return key
+}
