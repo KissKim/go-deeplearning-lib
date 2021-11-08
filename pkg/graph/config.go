@@ -2,4 +2,5 @@ package graph
 
 type Config struct {
 	BatchSize    uint64
-	LearningRate LearningRat
+	LearningRate LearningRate
+	Optimizer    Optimize
