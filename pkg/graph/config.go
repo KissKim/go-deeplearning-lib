@@ -1,4 +1,5 @@
 package graph
 
 type Config struct {
-	Batc
+	BatchSize    uint64
+	Le
