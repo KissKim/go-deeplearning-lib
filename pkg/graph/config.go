@@ -12,3 +12,5 @@ func (c Config) Validate() Config {
 	if c.LearningRate == nil {
 		c.LearningRate = DefaultLearningRate
 	}
+	return c
+}
