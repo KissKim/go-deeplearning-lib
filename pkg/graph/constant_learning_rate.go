@@ -1,2 +1,3 @@
 package graph
 
+type ConstantLearningRate
