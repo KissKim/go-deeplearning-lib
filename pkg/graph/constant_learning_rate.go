@@ -1,3 +1,5 @@
 package graph
 
-type ConstantLearningRate
+type ConstantLearningRate float64
+
+func (r Constant
