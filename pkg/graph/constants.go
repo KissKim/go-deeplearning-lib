@@ -1,1 +1,4 @@
-package grap
+package graph
+
+const (
+	DefaultBatch
