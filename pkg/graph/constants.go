@@ -3,4 +3,4 @@ package graph
 const (
 	DefaultBatchSize    uint64               = 1
 	DefaultLearningRate ConstantLearningRate = 0.01
-	DefaultSeed         int6
+	DefaultSeed         int64                =
