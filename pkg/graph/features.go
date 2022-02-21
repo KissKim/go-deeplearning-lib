@@ -20,3 +20,24 @@ func (f *Features) Balance() {
 	n := len(f.Y)
 	m := len(f.Y[0])
 	f.ClassWeights = make([]float64, m)
+	for i := range f.Y {
+		f.ClassWeights[argmax(f.Y[i])]++
+	}
+	for i := range f.ClassWeights {
+		f.ClassWeights[i] = float64(n) / (float64(m) * f.ClassWeights[i])
+	}
+}
+
+func (f *Features) Prepare() {
+	if !f.DisableShuffle {
+		f.Shuffle()
+	}
+	if !f.DisableClassWeights {
+		f.Balance()
+	}
+}
+
+func (f *Features) Shuffle() {
+	r := rand.New(rand.NewSource(DefaultSeed))
+	r.Shuffle(len(f.X), func(i, j int) {
+		f.X[i], f.X[j] = f.X[j], f.X[i]
