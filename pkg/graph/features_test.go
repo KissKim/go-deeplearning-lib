@@ -6,4 +6,5 @@ import (
 	"testing"
 )
 
-func TestFeaturesClassWeights(t *testin
+func TestFeaturesClassWeights(t *testing.T) {
+	for k, v := 
