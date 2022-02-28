@@ -1,1 +1,5 @@
-package grap
+package graph
+
+import (
+	"math/rand"
+	"st
