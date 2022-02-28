@@ -6,4 +6,4 @@ import (
 	"testing"
 )
 
-func TestFeaturesClassW
+func TestFeaturesClassWeights(t *testin
