@@ -7,4 +7,5 @@ import (
 )
 
 func TestFeaturesClassWeights(t *testing.T) {
-	for k, v := 
+	for k, v := range []struct {
+		samples  in
