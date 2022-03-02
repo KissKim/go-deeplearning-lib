@@ -8,4 +8,5 @@ import (
 
 func TestFeaturesClassWeights(t *testing.T) {
 	for k, v := range []struct {
-		samples  in
+		samples  int
+		classes  i
