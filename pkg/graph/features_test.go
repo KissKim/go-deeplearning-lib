@@ -11,4 +11,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 		samples  int
 		classes  int
 		features int
-		mi
+		minority int
+		weights  []flo
