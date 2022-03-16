@@ -12,4 +12,6 @@ func TestFeaturesClassWeights(t *testing.T) {
 		classes  int
 		features int
 		minority int
-		weights  []flo
+		weights  []float64
+	}{
+		{43400, 5, 21,
