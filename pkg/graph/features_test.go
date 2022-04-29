@@ -19,3 +19,4 @@ func TestFeaturesClassWeights(t *testing.T) {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			features := Features{
 				X: make([][]float64, v.samples),
+				Y: make([][
