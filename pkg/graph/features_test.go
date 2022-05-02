@@ -21,3 +21,4 @@ func TestFeaturesClassWeights(t *testing.T) {
 				X: make([][]float64, v.samples),
 				Y: make([][]float64, v.samples),
 			}
+			rand.Seed(80)
