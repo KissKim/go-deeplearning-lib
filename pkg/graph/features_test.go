@@ -22,4 +22,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 				Y: make([][]float64, v.samples),
 			}
 			rand.Seed(80)
-			n := v.classes - 
+			n := v.classes - 1
+			for i := 0; i < v.sa
