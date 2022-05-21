@@ -26,4 +26,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 			for i := 0; i < v.samples; i++ {
 				features.X[i] = make([]float64, v.features)
 				features.Y[i] = make([]float64, v.classes)
-				if i
+				if i < v.minority {
+					
