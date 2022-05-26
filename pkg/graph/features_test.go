@@ -27,4 +27,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 				features.X[i] = make([]float64, v.features)
 				features.Y[i] = make([]float64, v.classes)
 				if i < v.minority {
-					features.Y[i][n]
+					features.Y[i][n] = 1
+				} else {
