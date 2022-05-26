@@ -29,3 +29,4 @@ func TestFeaturesClassWeights(t *testing.T) {
 				if i < v.minority {
 					features.Y[i][n] = 1
 				} else {
+					features.Y[i][rand.I
