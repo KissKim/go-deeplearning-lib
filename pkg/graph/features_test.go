@@ -32,4 +32,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 					features.Y[i][rand.Intn(n)] = 1
 				}
 			}
-			featur
+			features.Shuffle()
+			want := v.weig
