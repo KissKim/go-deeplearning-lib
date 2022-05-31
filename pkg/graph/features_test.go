@@ -33,4 +33,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 				}
 			}
 			features.Shuffle()
-			want := v.weig
+			want := v.weights
+			features.Ba
