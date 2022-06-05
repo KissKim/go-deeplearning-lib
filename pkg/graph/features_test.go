@@ -36,4 +36,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 			want := v.weights
 			features.Balance()
 			got := features.ClassWeights
-			for i :=
+			for i := range want {
+				if 
