@@ -37,4 +37,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 			features.Balance()
 			got := features.ClassWeights
 			for i := range want {
-				if 
+				if want[i]-got[i] > 1e-9 {
+					t.
