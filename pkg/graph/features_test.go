@@ -45,4 +45,5 @@ func TestFeaturesClassWeights(t *testing.T) {
 	}
 }
 
-func TestFeaturesS
+func TestFeaturesShuffle(t *testing.T) {
+	
