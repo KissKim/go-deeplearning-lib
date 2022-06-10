@@ -38,4 +38,8 @@ func TestFeaturesClassWeights(t *testing.T) {
 			got := features.ClassWeights
 			for i := range want {
 				if want[i]-got[i] > 1e-9 {
-					t.Fatalf("want[%d] %g, got[%d] %g", i, want, i, g
+					t.Fatalf("want[%d] %g, got[%d] %g", i, want, i, got)
+				}
+			}
+		})
+	
