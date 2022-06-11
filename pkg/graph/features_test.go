@@ -48,3 +48,6 @@ func TestFeaturesClassWeights(t *testing.T) {
 func TestFeaturesShuffle(t *testing.T) {
 	for k, v := range []struct {
 		features Features
+		want     Features
+	}{
+		{
