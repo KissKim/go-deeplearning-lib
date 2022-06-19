@@ -52,4 +52,4 @@ func TestFeaturesShuffle(t *testing.T) {
 	}{
 		{
 			Features{
-				X: [][]float64
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {
