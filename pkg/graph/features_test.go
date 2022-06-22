@@ -56,4 +56,4 @@ func TestFeaturesShuffle(t *testing.T) {
 				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}},
 			},
 			Features{
-				X: [][]float64{{
+				X: [][]float64{{0.5}, {0.9}, {0.1}, {
