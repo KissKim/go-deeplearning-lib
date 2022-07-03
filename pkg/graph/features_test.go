@@ -60,3 +60,5 @@ func TestFeaturesShuffle(t *testing.T) {
 				Y: [][]float64{{1, 0}, {1, 0}, {0, 1}, {1, 0}, {1, 0}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {0, 1}},
 			},
 		},
+	} {
+		t.Run(strconv.Itoa(k), func(
