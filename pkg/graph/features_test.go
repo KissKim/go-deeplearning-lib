@@ -62,4 +62,5 @@ func TestFeaturesShuffle(t *testing.T) {
 		},
 	} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
-			v.feature
+			v.features.Shuffle()
+			got := 
