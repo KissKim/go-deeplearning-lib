@@ -66,4 +66,5 @@ func TestFeaturesShuffle(t *testing.T) {
 			got := v.features.X
 			want := v.want.X
 			for i := range want {
-				for j := ra
+				for j := range want[i] {
+					if wan
