@@ -67,4 +67,5 @@ func TestFeaturesShuffle(t *testing.T) {
 			want := v.want.X
 			for i := range want {
 				for j := range want[i] {
-					if want[i][j] != got[i][j]
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want 
