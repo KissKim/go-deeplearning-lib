@@ -75,4 +75,4 @@ func TestFeaturesShuffle(t *testing.T) {
 			got = v.features.Y
 			want = v.want.Y
 			for i := range want {
-	
+				for j := range want[
