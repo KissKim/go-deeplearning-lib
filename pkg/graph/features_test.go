@@ -74,4 +74,5 @@ func TestFeaturesShuffle(t *testing.T) {
 			}
 			got = v.features.Y
 			want = v.want.Y
-			for 
+			for i := range want {
+	
