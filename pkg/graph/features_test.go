@@ -76,4 +76,4 @@ func TestFeaturesShuffle(t *testing.T) {
 			want = v.want.Y
 			for i := range want {
 				for j := range want[i] {
-					if want[
+					if want[i][j] != got[i][j] {
