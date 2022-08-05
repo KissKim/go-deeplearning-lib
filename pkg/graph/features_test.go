@@ -87,4 +87,5 @@ func TestFeaturesShuffle(t *testing.T) {
 
 func TestFeaturesSplit(t *testing.T) {
 	for k, v := range []struct {
-		data       F
+		data       Features
+		training  
