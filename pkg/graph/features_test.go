@@ -89,4 +89,7 @@ func TestFeaturesSplit(t *testing.T) {
 	for k, v := range []struct {
 		data       Features
 		training   Features
-		valid
+		validating Features
+	}{
+		{
+			
