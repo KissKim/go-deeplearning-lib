@@ -92,4 +92,5 @@ func TestFeaturesSplit(t *testing.T) {
 		validating Features
 	}{
 		{
-			
+			Features{
+				X: [][]float6
