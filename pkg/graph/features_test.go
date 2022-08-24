@@ -101,4 +101,4 @@ func TestFeaturesSplit(t *testing.T) {
 				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}},
 			},
 			Features{
-				X: [][
+				X: [][]float64{{0.8}, {0.9}},
