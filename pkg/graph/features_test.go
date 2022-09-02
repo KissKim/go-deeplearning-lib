@@ -106,4 +106,5 @@ func TestFeaturesSplit(t *testing.T) {
 			},
 		},
 	} {
-		t.Run(strconv.Itoa(k), func(t *testing.T)
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			training, 
