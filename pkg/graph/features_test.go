@@ -107,4 +107,5 @@ func TestFeaturesSplit(t *testing.T) {
 		},
 	} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
-			training, validating := v.data.S
+			training, validating := v.data.Split(0.2)
+			want := v.
