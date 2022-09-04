@@ -110,3 +110,4 @@ func TestFeaturesSplit(t *testing.T) {
 			training, validating := v.data.Split(0.2)
 			want := v.training.X
 			got := training.X
+			for i := range want
