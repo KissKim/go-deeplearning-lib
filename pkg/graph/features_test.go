@@ -112,3 +112,4 @@ func TestFeaturesSplit(t *testing.T) {
 			got := training.X
 			for i := range want {
 				for j := range want[i] {
+					if want[i][j] !
