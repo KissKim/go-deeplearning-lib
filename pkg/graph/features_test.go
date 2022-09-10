@@ -115,4 +115,7 @@ func TestFeaturesSplit(t *testing.T) {
 					if want[i][j] != got[i][j] {
 						t.Errorf("want %v, got %v", want, got)
 					}
-	
+				}
+			}
+
+			wa
