@@ -120,4 +120,5 @@ func TestFeaturesSplit(t *testing.T) {
 
 			want = v.validating.Y
 			got = validating.Y
-			for i := range want
+			for i := range want {
+				for j :
