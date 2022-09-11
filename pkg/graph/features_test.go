@@ -118,4 +118,5 @@ func TestFeaturesSplit(t *testing.T) {
 				}
 			}
 
-			wa
+			want = v.validating.Y
+			got = v
