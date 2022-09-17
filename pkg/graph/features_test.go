@@ -123,4 +123,5 @@ func TestFeaturesSplit(t *testing.T) {
 			for i := range want {
 				for j := range want[i] {
 					if want[i][j] != got[i][j] {
-						t.Fatalf("want %v, got %
+						t.Fatalf("want %v, got %v", want, got)
+					}
