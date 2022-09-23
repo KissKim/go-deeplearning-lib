@@ -11,4 +11,4 @@ func (f Fitter) Prepare() Fitter {
 	return f
 }
 
-func (f Fitter) Fit(g
+func (f Fitter) Fit(g Graph, w ...MetricsWr
