@@ -6,4 +6,5 @@ type Fitter struct {
 }
 
 func (f Fitter) Prepare() Fitter {
-	f.T
+	f.Training.Prepare()
+	f.Val
