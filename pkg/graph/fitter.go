@@ -27,4 +27,4 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 				w[k].Write(Metrics{Epoch: i, Sample: j, Estimate: a, Actual: f.Training.Y[j]})
 			}
 		}
-		for j := r
+		for j := range f.Validation.X {
