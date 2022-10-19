@@ -28,3 +28,4 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 			}
 		}
 		for j := range f.Validation.X {
+			a := g.Estimate(f.Validatio
