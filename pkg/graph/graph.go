@@ -23,3 +23,23 @@ func (g Graph) Apply(c Config) {
 }
 
 func (g Graph) Estimate(x []float64) []float64 {
+	for i := range g {
+		x = g[i].Estimate(x)
+	}
+	return x
+}
+
+func (g Graph) Gradients() [][][]float64 {
+	gradients := make([][][]float64, len(g))
+	for i := range gradients {
+		if l, ok := g[i].(Minimizeable); ok {
+			gradients[i] = l.Gradients()
+		}
+	}
+	return gradients
+}
+
+func (g Graph) Loss(x, y []float64) []float64 {
+	a := g.Estimate(x)
+	loss := make([]float64, len(y))
+	for i := range loss {
