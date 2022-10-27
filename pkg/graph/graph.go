@@ -43,3 +43,31 @@ func (g Graph) Loss(x, y []float64) []float64 {
 	a := g.Estimate(x)
 	loss := make([]float64, len(y))
 	for i := range loss {
+		loss[i] = a[i] - y[i]
+	}
+	return loss
+}
+
+func (g Graph) Minimize(gradients []float64) []float64 {
+	j := len(g) - 1
+	for i := range g {
+		gradients = g[j-i].Minimize(gradients)
+	}
+	return gradients
+}
+
+func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
+	var cost = func(a, y []float64) float64 {
+		var sum float64
+		for i := range a {
+			sum += math.Pow(a[i]-y[i], 2)
+		}
+		return 0.5 * sum
+	}
+
+	var zeros = func(a [][][]float64) [][][]float64 {
+		b := make([][][]float64, len(a))
+		for i := range a {
+			b[i] = make([][]float64, len(a[i]))
+			for j := range a[i] {
+				b[i][j] = make([]float64, len(a[i][j]))
