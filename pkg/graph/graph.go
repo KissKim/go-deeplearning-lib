@@ -71,3 +71,22 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 			b[i] = make([][]float64, len(a[i]))
 			for j := range a[i] {
 				b[i][j] = make([]float64, len(a[i][j]))
+			}
+		}
+		return b
+	}
+
+	weights := g.Weights()
+	gradients := zeros(weights)
+	for i := range weights {
+		for j := range weights[i] {
+			for k := range weights[i][j] {
+				w := weights[i][j][k]
+
+				weights[i][j][k] += epsilon
+				plus := cost(g.Estimate(x), y)
+				weights[i][j][k] = w
+
+				weights[i][j][k] -= epsilon
+				minus := cost(g.Estimate(x), y)
+				weights[i][j][k] = w
