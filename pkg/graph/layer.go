@@ -1,3 +1,4 @@
 package graph
 
-type Laye
+type Layer interface {
+	Estimate([]fl
