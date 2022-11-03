@@ -5,3 +5,4 @@ type Layer interface {
 	Minimize([]float64) []float64
 	SetShape([]uint64)
 	Shape() []uint64
+}
