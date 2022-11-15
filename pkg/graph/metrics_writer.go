@@ -4,4 +4,4 @@ type MetricsWriter interface {
 	Write(Metrics)
 }
 
-type Metric
+type MetricsWriterFunc func(Met
