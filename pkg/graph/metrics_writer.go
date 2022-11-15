@@ -6,4 +6,6 @@ type MetricsWriter interface {
 
 type MetricsWriterFunc func(Metrics)
 
-func (fn MetricsWriter
+func (fn MetricsWriterFunc) Write(m Metrics) {
+	fn(m)
+}
