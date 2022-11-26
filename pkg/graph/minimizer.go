@@ -1,3 +1,4 @@
 package graph
 
-type Min
+type Minimizer struct {
+	
