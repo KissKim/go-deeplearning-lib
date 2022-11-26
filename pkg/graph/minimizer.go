@@ -1,1 +1,3 @@
-package g
+package graph
+
+type Min
