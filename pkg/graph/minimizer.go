@@ -4,4 +4,5 @@ type Minimizer struct {
 	Layer
 	cursor       int
 	batch        [][][]float64
-	gradien
+	gradients    [][]float64
+	learningRate Learni
