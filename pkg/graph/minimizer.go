@@ -3,4 +3,5 @@ package graph
 type Minimizer struct {
 	Layer
 	cursor       int
-	batch        [][]
+	batch        [][][]float64
+	gradien
