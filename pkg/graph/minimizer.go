@@ -5,4 +5,5 @@ type Minimizer struct {
 	cursor       int
 	batch        [][][]float64
 	gradients    [][]float64
-	learningRate Learni
+	learningRate LearningRate
+	optimizer    
