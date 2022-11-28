@@ -6,4 +6,5 @@ type Minimizer struct {
 	batch        [][][]float64
 	gradients    [][]float64
 	learningRate LearningRate
-	optimizer    
+	optimizer    Optimizer
+	regulariz
