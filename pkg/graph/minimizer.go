@@ -7,4 +7,5 @@ type Minimizer struct {
 	gradients    [][]float64
 	learningRate LearningRate
 	optimizer    Optimizer
-	regulariz
+	regularizer  Regularizer
+	we
