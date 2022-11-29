@@ -8,4 +8,4 @@ type Minimizer struct {
 	learningRate LearningRate
 	optimizer    Optimizer
 	regularizer  Regularizer
-	we
+	weights      [][]float64
