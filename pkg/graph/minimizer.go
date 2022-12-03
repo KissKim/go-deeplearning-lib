@@ -9,3 +9,6 @@ type Minimizer struct {
 	optimizer    Optimizer
 	regularizer  Regularizer
 	weights      [][]float64
+}
+
+func (m *Mi
