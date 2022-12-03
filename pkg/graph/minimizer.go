@@ -11,4 +11,4 @@ type Minimizer struct {
 	weights      [][]float64
 }
 
-func (m *Mi
+func (m *Minimizer) Minimize(gradients []f
