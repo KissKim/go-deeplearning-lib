@@ -12,4 +12,4 @@ type Minimizer struct {
 }
 
 func (m *Minimizer) Minimize(gradients []float64) []float64 {
-	gra
+	gradients = m.Layer.Minimi
