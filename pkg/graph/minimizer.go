@@ -13,4 +13,5 @@ type Minimizer struct {
 
 func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	gradients = m.Layer.Minimize(gradients)
-	for i := range
+	for i := range m.gradients {
+		c
