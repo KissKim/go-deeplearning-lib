@@ -16,4 +16,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	for i := range m.gradients {
 		copy(m.batch[m.cursor][i], m.gradients[i])
 	}
-	m.curso
+	m.cursor++
+	if m.cursor < len(m.bat
