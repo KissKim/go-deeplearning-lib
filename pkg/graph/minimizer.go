@@ -20,4 +20,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	if m.cursor < len(m.batch) {
 		return gradients
 	}
-	
+	m.cursor = 0
+	m.average()
