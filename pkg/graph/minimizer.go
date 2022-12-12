@@ -22,3 +22,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	}
 	m.cursor = 0
 	m.average()
+	m.regularize()
+	m.optimize()
