@@ -25,4 +25,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	m.regularize()
 	m.optimize()
 	lr := m.learningRate.Rate()
-	for i := range m.b
+	for i := range m.batch[0] {
+		for 
