@@ -30,4 +30,7 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 			m.weights[i][j] -= lr * m.batch[0][i][j]
 		}
 	}
-	return gradien
+	return gradients
+}
+
+func (m *Minimizer) ave
