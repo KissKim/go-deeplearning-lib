@@ -33,4 +33,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (m *Minimizer) ave
+func (m *Minimizer) average() {
+	batchSize := 
