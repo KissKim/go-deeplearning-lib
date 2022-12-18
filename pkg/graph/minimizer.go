@@ -35,4 +35,5 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 
 func (m *Minimizer) average() {
 	batchSize := len(m.batch)
-	n := float64(b
+	n := float64(batchSize)
+	for i := range m
