@@ -38,4 +38,7 @@ func (m *Minimizer) average() {
 	n := float64(batchSize)
 	for i := range m.batch[0] {
 		for j := range m.batch[0][i] {
-			m.batch[0][i]
+			m.batch[0][i][j] = m.batch[0][i][j] / n
+		}
+	}
+	f
