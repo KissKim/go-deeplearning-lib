@@ -42,4 +42,5 @@ func (m *Minimizer) average() {
 		}
 	}
 	for i := 1; i < int(batchSize); i++ {
-		for j := range m.batch[
+		for j := range m.batch[0] {
+			for k := range m.bat
