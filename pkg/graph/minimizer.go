@@ -50,4 +50,4 @@ func (m *Minimizer) average() {
 	}
 }
 
-func (m 
+func (m *Minimizer) optimize() {
