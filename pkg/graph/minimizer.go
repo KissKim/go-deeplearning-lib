@@ -51,3 +51,4 @@ func (m *Minimizer) average() {
 }
 
 func (m *Minimizer) optimize() {
+	if m.optimizer == 
