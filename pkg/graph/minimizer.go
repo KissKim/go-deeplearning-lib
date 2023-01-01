@@ -54,4 +54,5 @@ func (m *Minimizer) optimize() {
 	if m.optimizer == nil {
 		return
 	}
-	g := m.
+	g := m.optimizer.Optimize(m.batch[0])
+	
