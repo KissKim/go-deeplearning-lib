@@ -55,4 +55,4 @@ func (m *Minimizer) optimize() {
 		return
 	}
 	g := m.optimizer.Optimize(m.batch[0])
-	
+	for i := range g {
