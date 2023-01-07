@@ -60,4 +60,5 @@ func (m *Minimizer) optimize() {
 	}
 }
 
-func (m *Minimizer
+func (m *Minimizer) regularize() {
+	if m.r
