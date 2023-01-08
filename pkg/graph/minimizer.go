@@ -62,4 +62,6 @@ func (m *Minimizer) optimize() {
 
 func (m *Minimizer) regularize() {
 	if m.regularizer != nil {
-		m.regularizer.Re
+		m.regularizer.Regularize(m.batch[0])
+	}
+}
