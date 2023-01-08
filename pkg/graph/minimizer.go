@@ -61,4 +61,4 @@ func (m *Minimizer) optimize() {
 }
 
 func (m *Minimizer) regularize() {
-	if m.r
+	if m.regularizer != nil {
