@@ -1,1 +1,3 @@
-pa
+package graph
+
+type Optimizer i
