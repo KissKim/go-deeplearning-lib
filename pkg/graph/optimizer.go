@@ -1,4 +1,4 @@
 package graph
 
 type Optimizer interface {
-	Optimize(gra
+	Optimize(gradients [][]float6
