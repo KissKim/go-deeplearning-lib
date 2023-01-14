@@ -1,3 +1,4 @@
 package graph
 
-type Regular
+type Regularizer interface {
+	R
