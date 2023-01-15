@@ -5,4 +5,5 @@ type Bias struct {
 	learner
 }
 
-func (b *Bias) Estimate(input []fl
+func (b *Bias) Estimate(input []float64) []float64 {
+	f
