@@ -2,4 +2,7 @@ package layers
 
 type Bias struct {
 	layer
-	lea
+	learner
+}
+
+func (b *B
