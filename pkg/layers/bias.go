@@ -1,3 +1,5 @@
 package layers
 
-type B
+type Bias struct {
+	layer
+	lea
