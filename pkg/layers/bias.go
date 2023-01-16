@@ -7,4 +7,4 @@ type Bias struct {
 
 func (b *Bias) Estimate(input []float64) []float64 {
 	for i := range input {
-		b
+		b.output[i] = input[i] + b.wei
