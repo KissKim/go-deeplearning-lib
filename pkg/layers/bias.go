@@ -12,4 +12,4 @@ func (b *Bias) Estimate(input []float64) []float64 {
 	return b.output
 }
 
-func (b *Bias) 
+func (b *Bias) Minimize(gradien
