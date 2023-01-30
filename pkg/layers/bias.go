@@ -13,4 +13,5 @@ func (b *Bias) Estimate(input []float64) []float64 {
 }
 
 func (b *Bias) Minimize(gradients []float64) []float64 {
-	for k, v := range gr
+	for k, v := range gradients {
+		b.lo
