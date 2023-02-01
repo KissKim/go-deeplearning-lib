@@ -16,4 +16,7 @@ func (b *Bias) Minimize(gradients []float64) []float64 {
 	for k, v := range gradients {
 		b.localGradients[0][k] = v
 	}
-	return gradie
+	return gradients
+}
+
+func (b *Bias) S
