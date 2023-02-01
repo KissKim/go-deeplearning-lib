@@ -19,4 +19,4 @@ func (b *Bias) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (b *Bias) S
+func (b *Bias) SetShape(shape []uint64) {
