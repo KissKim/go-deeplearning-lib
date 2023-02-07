@@ -21,4 +21,5 @@ func (b *Bias) Minimize(gradients []float64) []float64 {
 
 func (b *Bias) SetShape(shape []uint64) {
 	b.layer.SetShape(shape)
-	w := b.outp
+	w := b.outputShape.Size()
+	b.loca
