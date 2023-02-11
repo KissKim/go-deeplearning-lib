@@ -23,4 +23,4 @@ func (b *Bias) SetShape(shape []uint64) {
 	b.layer.SetShape(shape)
 	w := b.outputShape.Size()
 	b.localGradients = make([][]float64, 1)
-	b
+	b.weights = make([][]f
