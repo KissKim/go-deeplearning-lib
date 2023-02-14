@@ -28,4 +28,5 @@ func (b *Bias) SetShape(shape []uint64) {
 	b.weights[0] = make([]float64, w)
 }
 
-func (b *Bias) St
+func (b *Bias) String() string {
+	return "bias:
