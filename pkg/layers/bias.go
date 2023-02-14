@@ -25,4 +25,7 @@ func (b *Bias) SetShape(shape []uint64) {
 	b.localGradients = make([][]float64, 1)
 	b.weights = make([][]float64, 1)
 	b.localGradients[0] = make([]float64, w)
-	b.weights[0] = make([]f
+	b.weights[0] = make([]float64, w)
+}
+
+func (b *Bias) St
