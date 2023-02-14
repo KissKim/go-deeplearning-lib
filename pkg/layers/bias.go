@@ -29,4 +29,5 @@ func (b *Bias) SetShape(shape []uint64) {
 }
 
 func (b *Bias) String() string {
-	return "bias:
+	return "bias:"
+}
