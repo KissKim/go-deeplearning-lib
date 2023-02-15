@@ -15,3 +15,5 @@ const (
 	yellow = "\033[1;33m"
 	space  = " "
 	indent = "  "
+	tab    = "\t"
+)
