@@ -1,4 +1,5 @@
 package layers
 
 const (
-	epsilon = 
+	epsilon = 1e-8
+)
