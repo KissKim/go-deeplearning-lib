@@ -1,1 +1,4 @@
-package laye
+package layers
+
+const (
+	epsilon = 
