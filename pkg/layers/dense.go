@@ -1,1 +1,3 @@
-package la
+package layers
+
+type Dense str
