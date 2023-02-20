@@ -1,4 +1,5 @@
 package layers
 
 type Dense struct {
-	bias   
+	bias    Bias
+	dense   Unbi
