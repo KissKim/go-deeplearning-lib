@@ -12,4 +12,7 @@ func (l *Dense) Estimate(input []float64) []float64 {
 }
 
 func (l *Dense) Gradients() [][]float64 {
-	return append(l.bias.localGradients, l
+	return append(l.bias.localGradients, l.dense.localGradients...)
+}
+
+fu
