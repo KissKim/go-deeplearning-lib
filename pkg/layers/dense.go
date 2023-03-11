@@ -20,4 +20,4 @@ func (l *Dense) Minimize(gradients []float64) []float64 {
 	return l.dense.Minimize(gradients)
 }
 
-func (l *D
+func (l *Dense) SetShape(shape []uin
