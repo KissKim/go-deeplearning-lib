@@ -24,3 +24,6 @@ func (l *Dense) SetShape(shape []uint64) {
 	l.dense.Neurons = l.Neurons
 	l.dense.SetShape(shape)
 	l.bias.SetShape(l.dense.Shape())
+}
+
+func (l *Dense) Shape() 
