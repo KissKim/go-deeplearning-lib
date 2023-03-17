@@ -31,4 +31,4 @@ func (l *Dense) Shape() []uint64 {
 }
 
 func (l *Dense) String() string {
-	re
+	return l.dense.String() + 
