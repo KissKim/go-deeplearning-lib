@@ -51,3 +51,29 @@ func TestGradient(t *testing.T) {
 		Data   graph.Features
 		Graph  graph.Graph
 	}{
+		{0, AND, linearGraph()},
+		{1, NAND, linearGraph()},
+		{2, OR, linearGraph()},
+		{3, XOR, linearGraph()},
+		{0, AND, polynomialGraph()},
+		{1, NAND, polynomialGraph()},
+		{2, OR, polynomialGraph()},
+		{3, XOR, polynomialGraph()},
+	} {
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			v.Data.DisableClassWeights = true
+			v.Data.DisableShuffle = true
+
+			v.Graph.Apply(graph.Config{}.Validate())
+
+			fitter := graph.Fitter{Training: v.Data}
+			fitter.Fit(v.Graph, writer)
+
+			for m := range v.Data.X {
+				x := v.Data.X[m]
+				y := v.Data.Y[m]
+
+				want := v.Graph.NumericGradients(x, y)
+
+				v.Graph.Minimize(v.Graph.Loss(x, y))
+				got := v.Graph.Gradients()
