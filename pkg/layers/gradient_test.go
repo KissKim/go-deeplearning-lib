@@ -28,3 +28,26 @@ func TestGradient(t *testing.T) {
 			&Dense{Neurons: 1},
 			&Polynomial{Degree: 2},
 			&Sigmoid{},
+		)
+	}
+
+	var name = func(l graph.Layer) string {
+		type Stringer interface{ String() string }
+		var s string
+		if stringer, ok := l.(Stringer); ok {
+			s = strings.Split(stringer.String(), "\n")[0]
+		} else {
+			s = reflect.TypeOf(l).String()
+		}
+		return s
+	}
+
+	var writer graph.MetricsWriterFunc = func(metrics graph.Metrics) {
+		t.Log(metrics.String())
+	}
+
+	for k, v := range []struct {
+		Epochs uint64
+		Data   graph.Features
+		Graph  graph.Graph
+	}{
