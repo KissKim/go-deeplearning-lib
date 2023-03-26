@@ -1,3 +1,4 @@
 package layers
 
-type 
+type layer struct {
+	inp
