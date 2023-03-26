@@ -77,3 +77,19 @@ func TestGradient(t *testing.T) {
 
 				v.Graph.Minimize(v.Graph.Loss(x, y))
 				got := v.Graph.Gradients()
+
+				for i := range want {
+					for j := range want[i] {
+						for k := range want[i][j] {
+							if math.Abs(math.Abs(want[i][j][k]-got[i][j][k])) > epsilon {
+								t.Errorf("%s %d, weight: %d, want %g, got %g", name(v.Graph[i]), i, k, want[i][j][k], got[i][j][k])
+							} else {
+								t.Logf("%s%s %d, weight: %d, want %g got %g%s", green, name(v.Graph[i]), i, k, want[i][j][k], got[i][j][k], nc)
+							}
+						}
+					}
+				}
+			}
+		})
+	}
+}
