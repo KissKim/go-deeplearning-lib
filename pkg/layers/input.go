@@ -12,3 +12,11 @@ func (i Input) Minimize(gradients []float64) []float64 {
 }
 
 func (i Input) SetShape(input []uint64) {}
+
+func (i Input) Shape() []uint64 {
+	return Shape(i).Shape()
+}
+
+func (i Input) String() string {
+	return "input:"
+}
