@@ -1,4 +1,5 @@
 package layers
 
 type layer struct {
-	inp
+	inputShape  Shape
+	outputShape 
