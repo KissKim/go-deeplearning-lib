@@ -7,4 +7,7 @@ type layer struct {
 }
 
 func (l *layer) Minimize(loss []float64) []float64 {
-	retu
+	return loss
+}
+
+func (l *layer
