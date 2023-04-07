@@ -11,4 +11,5 @@ func (l *layer) Minimize(loss []float64) []float64 {
 }
 
 func (l *layer) Shape() []uint64 {
-	return l.
+	return l.outputShape.Shape()
+}
