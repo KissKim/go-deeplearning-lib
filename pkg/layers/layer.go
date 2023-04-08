@@ -15,4 +15,5 @@ func (l *layer) Shape() []uint64 {
 }
 
 func (l *layer) SetShape(shape []uint64) {
-	l.inputS
+	l.inputShape = shape
+	l.outputSh
