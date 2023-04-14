@@ -17,4 +17,4 @@ func (l *layer) Shape() []uint64 {
 func (l *layer) SetShape(shape []uint64) {
 	l.inputShape = shape
 	l.outputShape = shape
-	l.output = make
+	l.output = make([]float64, l.outputShape
