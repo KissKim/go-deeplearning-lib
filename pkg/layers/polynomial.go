@@ -3,4 +3,7 @@ package layers
 import (
 	"fmt"
 	"math"
-	"s
+	"strings"
+)
+
+type Poly
