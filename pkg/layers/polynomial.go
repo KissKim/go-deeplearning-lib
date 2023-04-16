@@ -8,4 +8,6 @@ import (
 
 type Polynomial struct {
 	layer
-	lear
+	learner
+	Degree int
+	inpu
