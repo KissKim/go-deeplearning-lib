@@ -14,4 +14,4 @@ type Polynomial struct {
 	terms  [][]float64
 }
 
-func (l *Polynomial) E
+func (l *Polynomial) Estimate(input []float64) [
