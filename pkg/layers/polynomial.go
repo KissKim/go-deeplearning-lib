@@ -19,4 +19,4 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 	for j := range l.terms {
 		var p float64
 		for k := range l.terms[j] {
-			l.ter
+			l.terms[j][k] = math.Pow(input
