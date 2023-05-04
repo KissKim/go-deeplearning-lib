@@ -22,4 +22,7 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 			l.terms[j][k] = math.Pow(input[j], float64(k))
 			p = math.FMA(l.weights[j][k], l.terms[j][k], p)
 		}
-		l.output[j] = input[j]
+		l.output[j] = input[j] * p
+	}
+	return l.output
+}
