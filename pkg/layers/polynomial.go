@@ -27,4 +27,4 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 	return l.output
 }
 
-func (l *Polynomi
+func (l *Polynomial) Minimize(gr
