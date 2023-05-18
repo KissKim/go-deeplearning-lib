@@ -40,4 +40,5 @@ func (l *Polynomial) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (l *Polynomial) SetShape
+func (l *Polynomial) SetShape(shape []uint64) {
+	l.layer.Se
