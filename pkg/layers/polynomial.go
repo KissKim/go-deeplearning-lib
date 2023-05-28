@@ -54,4 +54,5 @@ func (l *Polynomial) SetShape(shape []uint64) {
 	}
 }
 
-func (l *Polynomia
+func (l *Polynomial) String() string {
+	
