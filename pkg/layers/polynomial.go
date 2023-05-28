@@ -51,4 +51,7 @@ func (l *Polynomial) SetShape(shape []uint64) {
 		l.localGradients[j] = make([]float64, l.Degree)
 		l.terms[j] = make([]float64, l.Degree)
 		l.weights[j] = Random(l.Degree)
-	
+	}
+}
+
+func (l *Polynomia
