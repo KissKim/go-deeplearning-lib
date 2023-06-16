@@ -69,4 +69,4 @@ func (l *Polynomial) toYAML() string {
 	for _, v := range l.output {
 		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
 	}
-	s = append(s, fmt.Spr
+	s = append(s, fmt.Sprintf("%spolynomials:",
