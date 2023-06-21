@@ -74,4 +74,5 @@ func (l *Polynomial) toYAML() string {
 		s = append(s, fmt.Sprintf("%s%s-", indent, indent))
 		s = append(s, fmt.Sprintf("%s%sinput: %g", indent, indent, l.input[j]))
 		s = append(s, fmt.Sprintf("%s%scoefficients:", indent, indent))
-		for _, v := range l.weig
+		for _, v := range l.weights[j] {
+			s = append(s
