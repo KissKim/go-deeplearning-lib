@@ -1,4 +1,7 @@
 package layers
 
 import (
-	"math/ra
+	"math/rand"
+)
+
+func Random(size
