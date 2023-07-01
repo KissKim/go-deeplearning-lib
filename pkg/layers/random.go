@@ -4,4 +4,5 @@ import (
 	"math/rand"
 )
 
-func Random(size
+func Random(size int) []float64 {
+	
