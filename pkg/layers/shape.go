@@ -1,3 +1,5 @@
 package layers
 
-type Shape []u
+type Shape []uint64
+
+func (s
