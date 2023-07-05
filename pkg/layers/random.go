@@ -8,4 +8,7 @@ func Random(size int) []float64 {
 	w := make([]float64, size)
 	r := rand.New(rand.NewSource(9868))
 	for i := range w {
-		w[i] = r.NormFlo
+		w[i] = r.NormFloat64()
+	}
+	return w
+}
