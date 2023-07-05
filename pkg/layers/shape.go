@@ -1,1 +1,3 @@
-package lay
+package layers
+
+type Shape []u
