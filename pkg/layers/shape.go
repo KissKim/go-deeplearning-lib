@@ -8,4 +8,6 @@ func (s Shape) Shape() []uint64 {
 	return shape
 }
 
-func (s Shape) Size() in
+func (s Shape) Size() int {
+	var size uint64 = 1
+	fo
