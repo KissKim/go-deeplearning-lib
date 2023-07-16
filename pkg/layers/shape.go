@@ -13,4 +13,5 @@ func (s Shape) Size() int {
 	for _, v := range s {
 		size *= v
 	}
-	return in
+	return int(size)
+}
