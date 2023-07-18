@@ -6,4 +6,5 @@ import (
 	"strings"
 )
 
-type Sigm
+type Sigmoid struct {
+	laye
