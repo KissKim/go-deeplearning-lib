@@ -7,4 +7,7 @@ import (
 )
 
 type Sigmoid struct {
-	laye
+	layer
+}
+
+func (s *Sigmoid) Ac
