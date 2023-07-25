@@ -22,4 +22,7 @@ func (s *Sigmoid) Estimate(x []float64) []float64 {
 	for i := range x {
 		s.output[i] = s.Activate(x[i])
 	}
-	return s.outp
+	return s.output
+}
+
+func (s *Sigmoid)
