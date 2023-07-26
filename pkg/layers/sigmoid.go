@@ -32,4 +32,4 @@ func (s *Sigmoid) Minimize(loss []float64) []float64 {
 	return loss
 }
 
-func (s *S
+func (s *Sigmoid) String() strin
