@@ -26,4 +26,5 @@ func (s *Sigmoid) Estimate(x []float64) []float64 {
 }
 
 func (s *Sigmoid) Minimize(loss []float64) []float64 {
-	for i := range loss
+	for i := range loss {
+		loss[i] = loss[i] * s.D
