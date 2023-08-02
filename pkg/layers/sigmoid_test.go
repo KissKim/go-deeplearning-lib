@@ -6,4 +6,4 @@ import (
 	"testing"
 )
 
-func TestSigmoi
+func TestSigmoidActivate(t *testing.T
