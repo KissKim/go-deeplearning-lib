@@ -6,4 +6,5 @@ import (
 	"testing"
 )
 
-func TestSigmoidActivate(t *testing.T
+func TestSigmoidActivate(t *testing.T) {
+	var sigmoid = func
