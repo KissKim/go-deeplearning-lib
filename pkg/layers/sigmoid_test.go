@@ -7,4 +7,5 @@ import (
 )
 
 func TestSigmoidActivate(t *testing.T) {
-	var sigmoid = func
+	var sigmoid = func(x float64) float64 {
+		return 
