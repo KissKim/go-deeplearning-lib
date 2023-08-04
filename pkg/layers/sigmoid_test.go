@@ -8,4 +8,4 @@ import (
 
 func TestSigmoidActivate(t *testing.T) {
 	var sigmoid = func(x float64) float64 {
-		return 
+		return math.Exp(x) / (1.0 + 
