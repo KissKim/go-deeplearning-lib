@@ -10,4 +10,4 @@ func TestSigmoidActivate(t *testing.T) {
 	var sigmoid = func(x float64) float64 {
 		return math.Exp(x) / (1.0 + math.Exp(x))
 	}
-	for k, v := range []float64{-1000, 
+	for k, v := range []float64{-1000, -100, -10, 0, 10, 100, 1000}
