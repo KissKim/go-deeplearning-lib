@@ -11,4 +11,5 @@ func TestSigmoidActivate(t *testing.T) {
 		return math.Exp(x) / (1.0 + math.Exp(x))
 	}
 	for k, v := range []float64{-1000, -100, -10, 0, 10, 100, 1000} {
-		t.Run(strconv.Itoa(k), func(t *testing
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			s := new(Sigmoid)
