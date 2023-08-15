@@ -13,3 +13,4 @@ func TestSigmoidActivate(t *testing.T) {
 	for k, v := range []float64{-1000, -100, -10, 0, 10, 100, 1000} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			s := new(Sigmoid)
+			want := sigmoid(v)
