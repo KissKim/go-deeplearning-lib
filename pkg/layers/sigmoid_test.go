@@ -18,3 +18,8 @@ func TestSigmoidActivate(t *testing.T) {
 			if want-got > 1e-16 {
 				t.Errorf("want %g, got %g", want, got)
 			}
+		})
+	}
+}
+
+func TestSig
