@@ -23,3 +23,4 @@ func TestSigmoidActivate(t *testing.T) {
 }
 
 func TestSigmoidDerive(t *testing.T) {
+	var sigmoid = func(x 
