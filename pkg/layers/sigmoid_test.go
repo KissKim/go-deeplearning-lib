@@ -28,4 +28,7 @@ func TestSigmoidDerive(t *testing.T) {
 	}
 
 	var derive = func(z float64) float64 {
-		return math.Exp(-z) / (math.Pow(1+math.Ex
+		return math.Exp(-z) / (math.Pow(1+math.Exp(-z), 2))
+	}
+
+	for k,
