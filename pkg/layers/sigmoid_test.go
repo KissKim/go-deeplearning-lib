@@ -31,4 +31,4 @@ func TestSigmoidDerive(t *testing.T) {
 		return math.Exp(-z) / (math.Pow(1+math.Exp(-z), 2))
 	}
 
-	for k,
+	for k, v := range []float64{0.1, 
