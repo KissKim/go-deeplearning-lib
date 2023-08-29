@@ -35,4 +35,5 @@ func TestSigmoidDerive(t *testing.T) {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			s := new(Sigmoid)
 			want := derive(v)
-			got := s.Der
+			got := s.Derive(sigmoid(v))
+			i
