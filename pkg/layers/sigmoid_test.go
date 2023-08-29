@@ -34,4 +34,5 @@ func TestSigmoidDerive(t *testing.T) {
 	for k, v := range []float64{0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			s := new(Sigmoid)
-			want := deriv
+			want := derive(v)
+			got := s.Der
