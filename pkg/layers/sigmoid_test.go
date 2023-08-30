@@ -37,4 +37,8 @@ func TestSigmoidDerive(t *testing.T) {
 			want := derive(v)
 			got := s.Derive(sigmoid(v))
 			if want-got > 1e-16 {
-				t.Errorf("want %g, got %g", wa
+				t.Errorf("want %g, got %g", want, got)
+			}
+		})
+	}
+}
