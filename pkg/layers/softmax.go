@@ -11,4 +11,5 @@ type Softmax struct {
 func (s *Softmax) Estimate(z []float64) []float64 {
 	var max float64
 	for _, v := range z {
-		max = 
+		max = math.Max(max, v)
+	}
