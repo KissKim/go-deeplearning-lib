@@ -13,3 +13,4 @@ func (s *Softmax) Estimate(z []float64) []float64 {
 	for _, v := range z {
 		max = math.Max(max, v)
 	}
+	var sum float64
