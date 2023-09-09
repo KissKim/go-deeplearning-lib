@@ -24,4 +24,4 @@ func (s *Softmax) Estimate(z []float64) []float64 {
 	return s.output
 }
 
-func (s
+func (s *Softmax) String() str
