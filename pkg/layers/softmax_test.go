@@ -35,3 +35,5 @@ func TestSoftmaxEstimate(t *testing.T) {
 				t.Errorf("want %d, got %d", want, got)
 			}
 		})
+	}
+}
