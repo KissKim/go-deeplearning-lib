@@ -9,4 +9,5 @@ import (
 type UnbiasedDense struct {
 	layer
 	learner
-	gradi
+	gradients []float64
+	input   
