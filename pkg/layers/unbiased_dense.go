@@ -6,4 +6,4 @@ import (
 	"strings"
 )
 
-type 
+type UnbiasedDense struct
