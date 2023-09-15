@@ -6,4 +6,7 @@ import (
 	"strings"
 )
 
-type UnbiasedDense struct
+type UnbiasedDense struct {
+	layer
+	learner
+	gradi
