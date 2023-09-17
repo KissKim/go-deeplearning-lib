@@ -11,4 +11,7 @@ type UnbiasedDense struct {
 	learner
 	gradients []float64
 	input     []float64
-	Neurons 
+	Neurons   uint64
+}
+
+func (d *U
