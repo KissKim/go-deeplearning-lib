@@ -10,4 +10,5 @@ type UnbiasedDense struct {
 	layer
 	learner
 	gradients []float64
-	input   
+	input     []float64
+	Neurons 
