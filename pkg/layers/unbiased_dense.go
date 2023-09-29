@@ -26,4 +26,4 @@ func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 	return d.output
 }
 
-func (d *U
+func (d *UnbiasedDense) Minimize
