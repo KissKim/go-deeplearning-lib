@@ -23,4 +23,7 @@ func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 		}
 		d.output[j] = z
 	}
-	return d.
+	return d.output
+}
+
+func (d *U
