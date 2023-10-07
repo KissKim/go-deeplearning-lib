@@ -28,4 +28,6 @@ func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 
 func (d *UnbiasedDense) Minimize(gradients []float64) []float64 {
 	for k := range d.gradients {
-		d.gradien
+		d.gradients[k] = 0
+	}
+	for j := rang
