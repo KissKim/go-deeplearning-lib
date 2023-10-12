@@ -39,4 +39,4 @@ func (d *UnbiasedDense) Minimize(gradients []float64) []float64 {
 	return d.gradients
 }
 
-func (d *UnbiasedD
+func (d *UnbiasedDense) SetShape(shap
