@@ -36,4 +36,7 @@ func (d *UnbiasedDense) Minimize(gradients []float64) []float64 {
 			d.gradients[k] += gradients[j] * d.weights[j][k]
 		}
 	}
-	return d.gradient
+	return d.gradients
+}
+
+func (d *UnbiasedD
