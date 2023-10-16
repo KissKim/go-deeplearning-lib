@@ -44,4 +44,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	d.outputShape = Shape{d.Neurons}
 	w := d.inputShape.Size()
 	n := d.Neurons
+	d.input = make([]float64, w)
 	
