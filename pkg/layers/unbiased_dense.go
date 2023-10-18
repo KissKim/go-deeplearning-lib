@@ -46,4 +46,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	n := d.Neurons
 	d.input = make([]float64, w)
 	d.output = make([]float64, n)
-	d.gradients = make([
+	d.gradients = make([]float64, w)
+	d.localGra
