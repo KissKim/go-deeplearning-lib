@@ -48,4 +48,5 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	d.output = make([]float64, n)
 	d.gradients = make([]float64, w)
 	d.localGradients = make([][]float64, n)
-	d.weights = mak
+	d.weights = make([][]float64, n)
+	for j
