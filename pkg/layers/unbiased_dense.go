@@ -59,4 +59,5 @@ func (d *UnbiasedDense) String() string {
 	var s []string
 	s = append(s, "dense:")
 	s = append(s, fmt.Sprintf("%sinputs:", indent))
-	for _, v := range d.input 
+	for _, v := range d.input {
+		s = append(s, 
