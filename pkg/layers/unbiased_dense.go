@@ -73,4 +73,4 @@ func (d *UnbiasedDense) String() string {
 			s = append(s, fmt.Sprintf("%s%s%s- %g", indent, indent, indent, d.weights[j][k]))
 		}
 	}
-	r
+	return strings.Join(s, eo
