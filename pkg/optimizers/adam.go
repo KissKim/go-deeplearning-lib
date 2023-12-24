@@ -1,3 +1,5 @@
 package optimizers
 
-impor
+import "math"
+
+type Ada
