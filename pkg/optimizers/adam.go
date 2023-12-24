@@ -2,4 +2,6 @@ package optimizers
 
 import "math"
 
-type Ada
+type Adam struct {
+	epsilon   float64
+	
