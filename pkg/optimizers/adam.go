@@ -9,4 +9,4 @@ type Adam struct {
 	rmsprop   RMSprop
 }
 
-func (m Adam) Ap
+func (m Adam) Apply(weights [][]float64) 
