@@ -10,4 +10,5 @@ type Adam struct {
 }
 
 func (m Adam) Apply(weights [][]float64) Adam {
-	gradients := make([][]float64, len(w
+	gradients := make([][]float64, len(weights))
+	for i 
