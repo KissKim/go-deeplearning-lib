@@ -9,4 +9,5 @@ type Adam struct {
 	rmsprop   RMSprop
 }
 
-func (m Adam) Apply(weights [][]float64) 
+func (m Adam) Apply(weights [][]float64) Adam {
+	gradients := make
