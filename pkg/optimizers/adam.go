@@ -15,4 +15,8 @@ func (m Adam) Apply(weights [][]float64) Adam {
 		gradients[i] = make([]float64, len(weights[i]))
 	}
 	return Adam{
-		gradients: grad
+		gradients: gradients,
+	}
+}
+
+func (m Adam) Optimi
