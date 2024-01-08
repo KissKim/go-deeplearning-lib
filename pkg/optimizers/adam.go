@@ -19,4 +19,4 @@ func (m Adam) Apply(weights [][]float64) Adam {
 	}
 }
 
-func (m Adam) Optimi
+func (m Adam) Optimize(gradients [][]float64)
