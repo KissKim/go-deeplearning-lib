@@ -24,4 +24,7 @@ func (m Adam) Optimize(gradients [][]float64) [][]float64 {
 	s := m.rmsprop.Optimize(gradients)
 	for i := range m.gradients {
 		for j := range m.gradients[i] {
-			m.gradients[i][j] = (v[i][j] / (math.Sqrt(s[i][j] + m.e
+			m.gradients[i][j] = (v[i][j] / (math.Sqrt(s[i][j] + m.epsilon)))
+		}
+	}
+	return m
