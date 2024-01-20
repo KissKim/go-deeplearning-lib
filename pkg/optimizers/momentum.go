@@ -1,3 +1,4 @@
 package optimizers
 
-type Momentu
+type Momentum struct {
+	gradients [][]f
