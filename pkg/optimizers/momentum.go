@@ -8,4 +8,4 @@ type Momentum struct {
 func (m Momentum) Apply(weights [][]float64) Momentum {
 	gradients := make([][]float64, len(weights))
 	for i := range gradients {
-		gradie
+		gradients[i] = make([]flo
