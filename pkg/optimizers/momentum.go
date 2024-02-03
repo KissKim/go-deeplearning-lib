@@ -12,4 +12,4 @@ func (m Momentum) Apply(weights [][]float64) Momentum {
 	}
 	return Momentum{
 		gradients: gradients,
-		
+		momentum:  m.momentum,
