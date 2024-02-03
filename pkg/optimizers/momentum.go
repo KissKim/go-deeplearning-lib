@@ -9,3 +9,5 @@ func (m Momentum) Apply(weights [][]float64) Momentum {
 	gradients := make([][]float64, len(weights))
 	for i := range gradients {
 		gradients[i] = make([]float64, len(weights[i]))
+	}
+	return Momentum{
