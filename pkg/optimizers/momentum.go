@@ -11,3 +11,5 @@ func (m Momentum) Apply(weights [][]float64) Momentum {
 		gradients[i] = make([]float64, len(weights[i]))
 	}
 	return Momentum{
+		gradients: gradients,
+		
