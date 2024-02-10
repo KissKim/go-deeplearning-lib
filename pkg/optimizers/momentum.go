@@ -18,4 +18,5 @@ func (m Momentum) Apply(weights [][]float64) Momentum {
 
 func (m Momentum) Optimize(gradients [][]float64) [][]float64 {
 	for i := range gradients {
-		for j := range gradien
+		for j := range gradients[i] {
+			m.gradients[i][j] =
