@@ -1,3 +1,5 @@
 package regularizers
 
-import "math
+import "math"
+
+type Lasso struct 
