@@ -2,4 +2,6 @@ package regularizers
 
 import "math"
 
-type Lasso struct 
+type Lasso struct {
+	Lambda  float64
+	weights 
