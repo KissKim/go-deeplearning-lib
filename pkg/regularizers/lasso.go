@@ -4,4 +4,7 @@ import "math"
 
 type Lasso struct {
 	Lambda  float64
-	weights 
+	weights [][]float64
+}
+
+func (r L
