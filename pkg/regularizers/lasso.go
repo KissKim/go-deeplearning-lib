@@ -13,4 +13,5 @@ func (r Lasso) Regularize(gradients [][]float64) {
 	}
 	for i := range r.weights {
 		for j := range r.weights[i] {
-			gradients[i][j] = math.FMA(r.Lambda, math.Abs(r.weights
+			gradients[i][j] = math.FMA(r.Lambda, math.Abs(r.weights[i][j]), gradients[i][j])
+	
