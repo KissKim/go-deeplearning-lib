@@ -1,3 +1,5 @@
 package regularizers
 
-impo
+import "math"
+
+type Ridge str
