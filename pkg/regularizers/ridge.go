@@ -4,4 +4,7 @@ import "math"
 
 type Ridge struct {
 	Lambda  float64
-	w
+	weights [][]float64
+}
+
+func
