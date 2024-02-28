@@ -7,4 +7,5 @@ type Ridge struct {
 	weights [][]float64
 }
 
-func (r Ridge) Apply(weight
+func (r Ridge) Apply(weights [][]float64) Ridge {
+	return
