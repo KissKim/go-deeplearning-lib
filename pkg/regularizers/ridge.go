@@ -11,4 +11,4 @@ func (r Ridge) Apply(weights [][]float64) Ridge {
 	return Ridge{Lambda: r.Lambda, weights: weights}
 }
 
-func (r Ridge) Re
+func (r Ridge) Regularize(gradients [][]floa
