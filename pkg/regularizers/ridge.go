@@ -12,4 +12,7 @@ func (r Ridge) Apply(weights [][]float64) Ridge {
 }
 
 func (r Ridge) Regularize(gradients [][]float64) {
-	if r.Lamb
+	if r.Lambda == 0 {
+		return
+	}
+	fo
