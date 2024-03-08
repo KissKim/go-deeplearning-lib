@@ -15,4 +15,5 @@ func (r Ridge) Regularize(gradients [][]float64) {
 	if r.Lambda == 0 {
 		return
 	}
-	for i := range r.weights 
+	for i := range r.weights {
+		for j := range r.we
