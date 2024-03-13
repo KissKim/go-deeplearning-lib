@@ -17,4 +17,4 @@ func (r Ridge) Regularize(gradients [][]float64) {
 	}
 	for i := range r.weights {
 		for j := range r.weights[i] {
-			gradients[i][j] = math.FMA(r.Lambda,
+			gradients[i][j] = math.FMA(r.Lambda, math.Pow(r.weights[i][j],
